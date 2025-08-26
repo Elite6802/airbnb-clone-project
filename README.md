@@ -268,3 +268,29 @@ Implements robust security measures such as password hashing, JWT/session authen
 ### CI/CD and Deployment
 Integrates continuous integration and deployment pipelines using GitHub Actions and Docker. This automates testing, builds, and deployment, ensuring faster delivery cycles and reducing human error in the release process.
 
+
+## API Security
+
+Securing the backend APIs is critical for protecting sensitive user data, ensuring safe transactions, and maintaining the integrity of the Airbnb Clone platform. The following measures will be implemented:
+
+### Authentication
+Only verified users can access protected resources using secure authentication mechanisms such as JWT (JSON Web Tokens) or session-based authentication. This prevents unauthorized access and protects user accounts.
+
+### Authorization
+Role-based access control (RBAC) will be enforced to ensure users only perform actions allowed by their role (e.g., guest, host, admin). This prevents malicious actions like guests modifying property data or accessing admin dashboards.
+
+### Input Validation & Sanitization
+All incoming data will be validated and sanitized to prevent injection attacks (SQL Injection, XSS, etc.). This ensures that only safe and expected data interacts with the database and APIs.
+
+### Rate Limiting & Throttling
+API endpoints will be protected with rate limiting to prevent abuse such as brute-force login attempts or denial-of-service attacks. This maintains platform stability and ensures fair usage.
+
+### Secure Payment Processing
+Payment APIs will use encryption and follow PCI DSS compliance standards to secure financial data. Protecting transactions is critical to building trust between guests and hosts.
+
+### Data Encryption
+Sensitive data such as passwords and payment information will be encrypted both in transit (HTTPS/TLS) and at rest. This ensures data remains secure even if intercepted or accessed by unauthorized parties.
+
+### Logging & Monitoring
+API activity will be logged and monitored to detect suspicious activity and potential security breaches. This allows quick detection and response to threats before they escalate.
+
