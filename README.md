@@ -105,3 +105,68 @@ Social media links
 Copyright information
 Each component will be designed for reusability and consistency across the application.
 
+#TEAM ROLES
+Team Roles
+
+This section outlines each role involved in the Airbnb Clone project, what they do, and how they contribute to delivery. Roles are adapted from the project overview and standard software team practices.
+
+Product Owner (PO)
+
+Focus: Product vision & value
+Responsibility in this project: Owns the product roadmap, defines feature priorities (listings, bookings, payments), maintains the backlog, and validates that releases meet user needs and business goals.
+
+Business Analyst (BA)
+
+Focus: Requirements & process mapping
+Responsibility in this project: Translates stakeholder needs into clear user stories/acceptance criteria (e.g., booking flow, cancellation policy), models workflows, and ensures scope aligns with business rules.
+
+Project Manager / Scrum Master
+
+Focus: Delivery & team facilitation
+Responsibility in this project: Plans sprints, removes blockers, tracks milestones (MVP → features), facilitates ceremonies, and keeps delivery on time and within scope/budget.
+
+UI/UX Designer
+
+Focus: User journeys & interfaces
+Responsibility in this project: Designs flows (search → listing → booking → payment), wireframes, and high-fidelity UI; runs quick usability checks; ensures accessibility and responsive design.
+
+Software Architect
+
+Focus: High-level system design
+Responsibility in this project: Defines architecture (Django services, GraphQL/API gateway, MySQL schema, caching, integrations), sets coding standards, reviews designs for scalability, security, and maintainability.
+
+Backend Developer (Django/GraphQL)
+
+Focus: Core app & APIs
+Responsibility in this project: Implements domain logic (users, listings, availability, bookings, payments), builds REST/GraphQL APIs, handles authentication/authorization, integrates third-party services, writes unit tests.
+
+Frontend Developer (Web/App)
+
+Focus: Client experience
+Responsibility in this project: Builds user-facing views (browse, filter, booking wizard, dashboards), integrates with GraphQL/REST endpoints, manages state, handles form validation and error states.
+
+Database Administrator (DBA) / Data Engineer
+
+Focus: Data modeling & performance
+Responsibility in this project: Designs and optimizes the MySQL schema (entities/relations like User, Listing, Reservation, Payment, Review), manages indexing, migrations, backups, and data security.
+
+Quality Assurance (QA) Engineer
+
+Focus: Quality validation
+Responsibility in this project: Creates test plans/cases, executes functional, usability, and regression tests (e.g., double-booking prevention), tracks defects, and signs off on releases.
+
+Test Automation Engineer
+
+Focus: Fast, reliable testing
+Responsibility in this project: Builds and maintains automated test suites (API, integration, end-to-end), sets up test data and runners, integrates tests into CI to provide quick feedback.
+
+DevOps Engineer
+
+Focus: CI/CD & reliability
+Responsibility in this project: Sets up Dockerized environments, GitHub Actions pipelines (build → test → deploy), manages environment configs/secrets, monitors deployments, and optimizes release cycles.
+
+Security Engineer
+
+Focus: Application & data security
+Responsibility in this project: Implements and audits security controls (JWT/session security, rate limiting, input validation, OWASP checks), secret management, vulnerability scanning, and secure CI/CD practices.
+
