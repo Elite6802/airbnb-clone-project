@@ -189,3 +189,57 @@ This project leverages a modern full-stack ecosystem to build, secure, and deplo
 
 - **Security Tools & Practices** (e.g., JWT, input validation, OWASP guidelines): Applied throughout the project to protect user data, secure API endpoints, and prevent vulnerabilities.
 
+
+## Database Design
+
+The Airbnb Clone project requires a relational database to manage users, properties, bookings, reviews, and payments. Below is an overview of the core entities, their important fields, and how they are related.
+
+### Entities and Fields
+
+- **Users**
+  - `id` (Primary Key)
+  - `name`
+  - `email`
+  - `password_hash`
+  - `role` (guest, host, admin)
+
+- **Properties**
+  - `id` (Primary Key)
+  - `user_id` (Foreign Key → Users)
+  - `title`
+  - `description`
+  - `location`
+  - `price_per_night`
+
+- **Bookings**
+  - `id` (Primary Key)
+  - `user_id` (Foreign Key → Users)
+  - `property_id` (Foreign Key → Properties)
+  - `start_date`
+  - `end_date`
+  - `status` (pending, confirmed, cancelled)
+
+- **Reviews**
+  - `id` (Primary Key)
+  - `user_id` (Foreign Key → Users)
+  - `property_id` (Foreign Key → Properties)
+  - `rating` (1–5)
+  - `comment`
+
+- **Payments**
+  - `id` (Primary Key)
+  - `booking_id` (Foreign Key → Bookings)
+  - `amount`
+  - `payment_date`
+  - `payment_status` (pending, completed, failed)
+
+### Relationships
+
+- A **User** can own multiple **Properties**.  
+- A **User** can make multiple **Bookings**.  
+- Each **Booking** is linked to one **Property** and one **User**.  
+- A **User** can leave multiple **Reviews** for different **Properties**.  
+- Each **Review** belongs to one **User** and one **Property**.  
+- Each **Payment** is tied to exactly one **Booking**.  
+
+This structure ensures proper normalization and supports core Airbnb-like features such as user management, property listings, reservations, reviews, and payments.
