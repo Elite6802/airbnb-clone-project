@@ -169,3 +169,23 @@ Security Engineer
 Focus: Application & data security
 Responsibility in this project: Implements and audits security controls (JWT/session security, rate limiting, input validation, OWASP checks), secret management, vulnerability scanning, and secure CI/CD practices.
 
+## Technology Stack
+
+This project leverages a modern full-stack ecosystem to build, secure, and deploy a scalable booking platform.
+
+- **Django**: A Python web framework used to build the backend services, handle authentication, manage business logic, and expose APIs for core features like listings, reservations, and payments.
+
+- **MySQL**: A relational database system used to store and manage structured data such as users, property listings, bookings, reviews, and transactions.
+
+- **GraphQL**: An API query language used to allow clients to request exactly the data they need from the backend, improving efficiency and reducing over-fetching compared to traditional REST endpoints.
+
+- **Docker**: A containerization platform that ensures consistent development and deployment environments across machines and servers.
+
+- **GitHub**: A platform for version control and team collaboration, used to manage the repository, track issues, and streamline development workflows.
+
+- **GitHub Actions**: A CI/CD tool integrated into GitHub, used to automate building, testing, and deploying the application to ensure reliable delivery.
+
+- **Markdown**: A lightweight markup language used to create and format documentation files like this `README.md`.
+
+- **Security Tools & Practices** (e.g., JWT, input validation, OWASP guidelines): Applied throughout the project to protect user data, secure API endpoints, and prevent vulnerabilities.
+
