@@ -242,4 +242,29 @@ The Airbnb Clone project requires a relational database to manage users, propert
 - Each **Review** belongs to one **User** and one **Property**.  
 - Each **Payment** is tied to exactly one **Booking**.  
 
-This structure ensures proper normalization and supports core Airbnb-like features such as user management, property listings, reservations, reviews, and payments.
+
+## Feature Breakdown
+
+The Airbnb Clone project includes several core features that replicate the functionality of a real-world booking platform. Each feature is designed to provide a seamless experience for both guests and hosts while ensuring scalability and security.
+
+### User Management
+Allows users to register, log in, and manage their profiles. Supports multiple roles such as guests, hosts, and admins, each with specific permissions. This ensures secure access control and a personalized experience for different types of users.
+
+### Property Management
+Enables hosts to create, update, and manage property listings with details such as title, description, location, images, and price per night. This feature is central to connecting hosts with potential guests and drives the platform’s core offering.
+
+### Booking System
+Provides guests with the ability to search for available properties, make reservations, and manage bookings. This feature handles availability checks, prevents double-booking, and tracks booking status from pending to confirmed or cancelled.
+
+### Reviews and Ratings
+Allows guests to leave reviews and ratings for properties after their stay. This fosters trust and transparency in the community, helping future guests make informed decisions while encouraging hosts to maintain high-quality standards.
+
+### Payment Integration
+Supports secure payments linked to bookings, including tracking of amounts, statuses, and transaction dates. Ensures smooth financial operations and protects both hosts and guests by confirming payments before check-in.
+
+### Security and Authentication
+Implements robust security measures such as password hashing, JWT/session authentication, input validation, and protection against common vulnerabilities (OWASP). This ensures that user data and transactions remain safe at all times.
+
+### CI/CD and Deployment
+Integrates continuous integration and deployment pipelines using GitHub Actions and Docker. This automates testing, builds, and deployment, ensuring faster delivery cycles and reducing human error in the release process.
+
