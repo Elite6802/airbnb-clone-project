@@ -294,3 +294,18 @@ Sensitive data such as passwords and payment information will be encrypted both 
 ### Logging & Monitoring
 API activity will be logged and monitored to detect suspicious activity and potential security breaches. This allows quick detection and response to threats before they escalate.
 
+
+## CI/CD Pipeline
+
+A CI/CD (Continuous Integration / Continuous Deployment) pipeline is a set of automated processes that allow developers to build, test, and deploy code efficiently and reliably. 
+
+**Importance for this project:**  
+- Ensures code changes are automatically tested to prevent bugs from reaching production.  
+- Speeds up development by automating repetitive tasks such as builds and deployments.  
+- Maintains a consistent and stable application environment across all stages (development, staging, production).
+
+**Tools used:**  
+- **GitHub Actions** – Automates testing and deployment workflows.  
+- **Docker** – Provides consistent environments through containerization.  
+- **Other tools** (optional) – Jenkins, Travis CI, or CircleCI for advanced CI/CD workflows.
+
