@@ -105,8 +105,7 @@ Social media links
 Copyright information
 Each component will be designed for reusability and consistency across the application.
 
-#TEAM ROLES
-Team Roles
+## TEAM ROLES
 
 This section outlines each role involved in the Airbnb Clone project, what they do, and how they contribute to delivery. Roles are adapted from the project overview and standard software team practices.
 
